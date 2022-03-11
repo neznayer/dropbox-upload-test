@@ -26,14 +26,14 @@ jobs:
   dropbox:
     runs-on: ubuntu-18.04
       steps:
-        - name: Upload
-          uses: actions/download-artifact@v2
-          with:
-              name: package
-        - name: Dropbox
-          uses: whalemare/action-dropbox@v1.0.0
-          with:
-            file: "package.zip"
-            acessToken: "sl.BDgWa_7u77BWI2YqiYOGEB6cXX5WsTn5x9qpWrgu_-ZD729iuFjorTOjBeDDIL5cqoM1HB9BNdTX1abs_JXhMICwhN0-eZHqWJaJgfJyOkTZwq4rM01loThFqHfydz4UdZDbZyI"
-            destination: "my-dir" 
-      
+      - name: Upload
+        uses: actions/download-artifact@v2
+        with:
+            name: package
+      - name: Dropbox
+        uses: whalemare/action-dropbox@v1.0.0
+        with:
+          file: "package.zip"
+          acessToken: "sl.BDgWa_7u77BWI2YqiYOGEB6cXX5WsTn5x9qpWrgu_-ZD729iuFjorTOjBeDDIL5cqoM1HB9BNdTX1abs_JXhMICwhN0-eZHqWJaJgfJyOkTZwq4rM01loThFqHfydz4UdZDbZyI"
+          destination: "my-dir" 
+    

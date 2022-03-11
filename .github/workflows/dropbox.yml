@@ -32,8 +32,7 @@ jobs:
         with:
           name: package
       - name: Dropbox
-        uses: whalemare/action-dropbox@v1.0.0
+        uses: aTable/deploy-to-dropbox@v1.0.7
         with:
           file: "package.zip"
-          accessToken: "sl.BDgWa_7u77BWI2YqiYOGEB6cXX5WsTn5x9qpWrgu_-ZD729iuFjorTOjBeDDIL5cqoM1HB9BNdTX1abs_JXhMICwhN0-eZHqWJaJgfJyOkTZwq4rM01loThFqHfydz4UdZDbZyI"
           destination: "my-dir"

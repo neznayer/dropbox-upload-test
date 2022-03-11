@@ -34,5 +34,7 @@ jobs:
       - name: Dropbox
         uses: aTable/deploy-to-dropbox@v1.0.7
         with:
-          file: "package.zip"
-          destination: "my-dir"
+          DROPBOX_ACCESS_TOKEN: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
+          DROPBOX_DESTINATION_PATH_PREFIX: "/"
+          GLOB: "./package.zip"
+          DEBUG: false

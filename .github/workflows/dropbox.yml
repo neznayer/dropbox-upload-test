@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Upload
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: package
       - name: Dropbox
